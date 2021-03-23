@@ -1,6 +1,6 @@
 package com.smuexample.interfaceprograms;
 
-public class BankAccount {
+public class BankAccount implements Measurable{
     private double balance; // obj.getBalance()
     private int accountNumber; //obj.getAccountNumber()
     private static int LostAssignedNumber = 1000; //BankAccount.LostAssignedNumber
@@ -11,7 +11,7 @@ public class BankAccount {
         accountNumber = LostAssignedNumber;
     }
 
-    public double getBalance() {
+    public double getMeasure() {
         return balance;
     }
 
